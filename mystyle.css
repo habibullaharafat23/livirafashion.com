@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* font sizes */
+    --cookieHeadlineFontSize: 15px;
+    --cookieHeadlineFontWeight: 700;
+
+    --cookieDescriptionFontSize: 13px;
+    --cookieDescriptionFontWeight: 500;
+    --cookieDescriptionLineHeight: 22px;
+    --buttonFontSize: 14px;
+
+    --cookieTotalFontSize: 11px;
+
+    --bannerFont: "Urbanist", sans-serif;
+
+    --cookieHeadlineColor: rgb(20, 20, 20);
+    --cookieDescriptionColor: rgb(4, 5, 9);
+
+    --bannerAccentColor: black;
+    --bannerColorWhite: rgb(255, 255, 255);
+
+    --mainCookieBgColor: rgb(242, 242, 242);
+    --InsideBorderColor: rgb(217, 217, 217);
+
+    --noCookieFontSize: 12px;
+
+    --cookieValueWeight: 400;
+
+    --cookieTotalColor: white;
+
+    --normalButtonColor: rgb(20, 20, 20);
+    --activeButtonHoveColor: white;
+}
+
+
+.simpleBanner{
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    display: none;
+    background: #000000ba;
+    padding: 30px 5%;
+    align-items: center;
+    column-gap: 30px;
+    grid-template-columns: 8fr 1fr;
+}
+
+.simpleBannerMessage {
+    font-family: var(--bannerFont);
+    color: var(--bannerColorWhite);
+    border-radius: 10px;
+}
+
+.smallBannerBtnWraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cookieDescription {
+    font-size: var(--cookieDescriptionFontSize);
+    color: var(--bannerColorWhite);
+    font-family: var(--bannerFont);
+    font-weight: var(--cookieDescriptionFontWeight);
+    line-height: var(--cookieDescriptionLineHeight);
+}
+
+.simpleBannerMessage a {
+    color: lightblue;
+    text-decoration: none;
+    font-size: var(--cookieDescriptionFontSize);
+    font-family: var(--bannerFont);
+}
+
+.simpleBannerMessage a:hover {
+    text-decoration: underline;
+}
+
+.simpleBannerOkay {
+    font-size: var(--buttonFontSize);
+    font-family: var(--bannerFont);
+    padding: 10px 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: var(--bannerColorWhite);
+    color: var(--bannerAccentColor);
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    width: 100%;
+}
+
+.simpleBannerOkay:hover {
+    background: var(--bannerColorWhite);
+    color: var(--normalButtonColor);
+}
+
+@media screen and (max-width: 750px) {
+    .simpleBanner{
+        position: fixed;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        background: #00000099;
+        flex-direction: column;
+        padding: 20px 5%;
+        align-items: center;
+        row-gap: 20px;
+    }
+    
+}
