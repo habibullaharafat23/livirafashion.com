@@ -46,6 +46,7 @@
     align-items: center;
     column-gap: 30px;
     grid-template-columns: 8fr 1fr;
+     z-index: 111;
 }
 
 .simpleBannerMessage {
