@@ -1,4 +1,4 @@
-var websitePrivacyPage = "#";
+var websitePrivacyPage = "https://livirafashion.com/policies/privacy-policy";
 
 window.dataLayer = window.dataLayer || [];
 
