@@ -6,10 +6,10 @@
     --cookieHeadlineFontSize: 15px;
     --cookieHeadlineFontWeight: 700;
 
-    --cookieDescriptionFontSize: 13px;
+    --cookieDescriptionFontSize: 10px;
     --cookieDescriptionFontWeight: 500;
-    --cookieDescriptionLineHeight: 22px;
-    --buttonFontSize: 14px;
+    --cookieDescriptionLineHeight: 8px;
+    --buttonFontSize: 12px;
 
     --cookieTotalFontSize: 11px;
 
@@ -41,7 +41,7 @@
     left: 0;
     right: 0;
     display: none;
-    background: #000000ba;
+    background: #000000eb;
     padding: 30px 5%;
     align-items: center;
     column-gap: 30px;
@@ -107,11 +107,14 @@
         right: 0;
         display: grid;
         grid-template-columns: 1fr;
-        background: #00000099;
+        background: #000000eb;
         flex-direction: column;
         padding: 20px 5%;
         align-items: center;
         row-gap: 20px;
+        font-size: 4px;
+        line-height: 15px;
+        
     }
     
 }
